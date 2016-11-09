@@ -1,3 +1,10 @@
+# TODO: all coding guides on Angular.io.
+
+Clone from 
+
+git clone https://github.com/johnpapa/angular2-tour-of-heroes.git
+
+
 # Getting Started
 
 Super simple Angular 2 app with 1 module and 2 routes 
