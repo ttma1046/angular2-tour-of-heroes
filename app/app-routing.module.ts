@@ -4,11 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
+import { HeroListBasicComponent } from './hero-list-basic.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/dashboard',
+    redirectTo: '/heroeslist',
     pathMatch: 'full'
   },
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'heroes',
     component: HeroesComponent
+  },
+  {
+    path: 'heroeslist',
+    component: HeroListBasicComponent
   }
 ];
 
@@ -31,4 +36,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent];
+export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent, HeroListBasicComponent];
