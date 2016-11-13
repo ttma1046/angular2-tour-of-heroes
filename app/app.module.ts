@@ -12,6 +12,7 @@ import { AppRoutingModule, routedComponents } from './app-routing.module';
 import { HeroService } from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
 import { HeroListBasicComponent } from './hero-list-basic.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { HeroListBasicComponent } from './hero-list-basic.component';
     AppComponent,
     HeroSearchComponent,
     routedComponents,
-    HeroListBasicComponent
+    HeroListBasicComponent,
+    HighlightDirective
   ],
   providers: [
     HeroService

@@ -1,6 +1,7 @@
 ul {
   list-style-type: none;
   padding: 0;
+  display: inline-block;
 }
 
 li {
@@ -24,6 +25,24 @@ li {
 .inactive {
   background-color: #eee;
   transform: scale(1);
+}
+
+.buttons {
+  text-align: center;
+}
+button {
+  padding: 1.5em 3em;
+}
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+.column p {
+  min-height: 6em;
 }
 
 

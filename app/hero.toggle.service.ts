@@ -27,7 +27,7 @@ let ALL_HEROES = [
 @Injectable()
 export class Heroes implements Iterable<Hero> {
 
-  currentHeroes: Hero[] = ALL_HEROES;
+  currentHeroes: Hero[] = [];
 
   [Symbol.iterator]() {
     return this.currentHeroes.values();
